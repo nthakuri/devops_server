@@ -83,6 +83,10 @@ app.delete("/delete/:id", (req, res) => {
   });
 });
 
+app.get("/", function (req,res) {
+  res.send("Response from the GET request")
+  })
+
 app.listen(8080, () => {
   console.log("✅ Server running on port: 8080");
 });
