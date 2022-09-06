@@ -4,7 +4,7 @@ const mysql = require("mysql");
 const cors = require("cors");
 
 app.use(cors({
-  origin: 'http://localhost:8080'
+  origin: 'http://0.0.0.0:8080'
 }));
 
 const db = mysql.createPool({
